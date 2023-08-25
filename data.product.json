@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Promocion",
+        "precio": 36,
+        "img": "./src/taco-product.svg",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Bistec",
+        "precio": 20,
+        "img": "./src/taco-product.svg",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Salchicha",
+        "precio": 20,
+        "img": "./src/taco-product.svg",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Longaniza",
+        "precio": 20,
+        "img": "./src/taco-product.svg",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Campechano",
+        "precio": 20,
+        "img": "./src/taco-product.svg",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Tacos Dorados",
+        "precio": 16,
+        "img": "./src/img/flautas.png",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Tostadas",
+        "precio": 16,
+        "img": "./src/img/tostadas.png",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Pambazos",
+        "precio": 16,
+        "img": "./src/img/pambazo.png",
+        "cantidad": 1
+    }
+]

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? Importar Css -->
+    <link rel="stylesheet" href="Css/index.css">
+    <link href="styles/ihover.css" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/imagehover.css/css/imagehover.min.css">
+    <!--? Importar SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Js/Alert.js"></script>
+    <!--? Importar Iconos -->
+    <link rel="shortcut icon" href="src/taco.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!--? Importar Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--? Importar Animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Los Chinos</title>
+</head>
+
+<body>
+    <!--Todo: Barra de Navegación -->
+    <header class="page-header">
+        <nav>
+            <div class="trigger-menu-wrapper" id="navbar">
+                <span style="margin-left: 15px;" class="spn-titulo">Los Chinos</span>
+                <div class="menu-list">
+                    <ul>
+                        <li><a class="nav-links" href="#">Inicio</a></li>
+                        <li><a class="nav-links" href="#promo">Promociones</a></li>
+                        <li><a class="nav-links" href="#nosotros">Nosotros</a></li>
+                        <li><a class="nav-links" href="contact/form_contact.html">Contacto</a></li>
+                        <li><a class="nav-links" href="#Sucursal">Sucursal</a></li>
+                        <li><a class="nav-links" href="#social">Redes Sociales</a></li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <span class="ti ti-user-circle" onclick="login()"></span>
+                    <span style="margin-left: 10px;" class="ti ti-shopping-cart" id="verCarrito"></span>
+                    <span id="cantidadCarrito" class="cantidad-Carrito"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <head class="header-mobile">
+        <!--? Header Mobile -->
+        <nav class="nav-mobile">
+            <div class="lista-menu-mobile">
+                <a href="#" class="span-mobile">Los Chinos</a>
+                <span class="ti ti-user-circle" onclick="login()"></span>
+            </div>
+        </nav>
+    </head>
+    <main>
+        <!--Todo: Sección Principal del Inicio -->
+        <section>
+            <div class="index">
+                <h1 class="titulo-index">Taqueria "Los Chinos"</h1>
+                <p class="slogan-index">En Taqueria "Los Chinos" te tenemos una nueva opción.</p>
+            </div>
+            <div class="index-mobile">
+                <h1 class="titulo-index">Taqueria "Los Chinos"</h1>
+                <p class="slogan-index">En Taqueria "Los Chinos" te tenemos una nueva opción.</p>
+            </div>
+            <div class="h">
+                <h2 class="titulo-h">TACO EXPERTOS!</h2>
+                <div class="syo">
+                    <p>+ ATENCIÓN</p>
+                    <p style="margin-left: 2rem;">+ SABOR</p>
+                    <p style="margin-left: 2rem;">+ INOCUIDAD</p>
+                </div>
+                <img src="src/img/sellos.png" alt="">
+            </div>
+        </section>
+        <!--Todo: Sección Promociones -->
+        <section id="promo">
+            <div class="hashtag">
+                <h2 class="hashtag-1">SUPER PROMOCIÓN</h2>
+                <div>
+                    <p class="spn">#ATODAHORA <i class="ti ti-clock-hour-10"></i></p>
+                    <p class="spn">#EVITACOCINAR <i class="ti ti-heart"></i></p>
+                    <p class="spn">#SUPERFOOD <i class="ti ti-mood-wink-2"></i></p>
+                </div>
+            </div>
+            <!--? Seccion de Promocion -->
+            <div id="promo" class="super-promo">
+                <div class="promo">
+                    <img src="src/img/Discount-cuate.png" alt="promocion">
+                </div>
+                <div class="cont-promo">
+                    <h1 class="titulo-promo">PROMO AGOSTO: 2x1 EN TACOS DORADOS</h1>
+                    <hr class="complement">
+                    <div class="price">
+                        <p style="text-decoration-line: line-through;">ANTES $36.⁰⁰</p>
+                        <p>AHORA $18.⁰⁰</p>
+                    </div>
+                </div>
+            </div>
+            <!--? Promo Mobile -->
+            <div id="promo" class="promo-mobile">
+                <h3 class="promo-title-mobile">PROMO AGOSTO: 2x1 EN TACOS DORADOS</h3>
+                <div class="promo-img-mobile">
+                    <img src="src/img/Discount-cuate.png" />
+                    <hr class="complement">
+                    <div class="precio-mobile">
+                        <p style="text-decoration-line: line-through;">ANTES $36.⁰⁰</p>
+                        <p>AHORA $18.⁰⁰</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Todo: Catálogo Productos -->
+        <!--? Modal Content -->
+        <div id="modal-container" class="modal-container"></div>
+        <section>
+            <div class="container-title">
+                <strong class="str">TODO SOBRE NUESTROS TACOS</strong>
+                <h1 id="productos" class="titulo-card">Nuestro Menú</h1>
+                <hr class="line-title">
+            </div>
+            <h3 class="product-title">Los Tradicionales</h3>
+            <div>
+                <input type="search" class="search" placeholder="Busca entre nuestros productos" autocomplete="off" />
+            </div>
+            <!--? Productos Js Funcionales -->
+            <div id="shopContent" class="shop-content"></div>
+        </section>
+        <!--Todo: Seccion Socios -->
+        <!-- <section>
+            <div class="contact">
+                <div class="content">
+                    <h2 id="contactanos" class="titulo-socios">¿Quieres Vender Nuestros Productos?</h2>
+                    <div class="contenedor">
+                        <button class="btn-socios" onclick="modal()">Contactános</button>
+                    </div>
+                </div>
+            </div>
+            <div class="socios">
+                <div class="cart">
+                    <div class="cart-inner">
+                        <img
+                            src="https://edicom.mx/dam/jcr:56ae5073-20b3-4425-af23-143d550a8986/walmart_integration.png" />
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart-inner">
+                        <img style="margin-top: 50px;"
+                            src="https://cdn.freebiesupply.com/logos/thumbs/2x/sams-club-2-logo.png" />
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart-inner">
+                        <img style="margin-top: 60px;" src="./src/img/Sin título.png" />
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart-inner">
+                        <img src="./src/img/Cotsco.png" />
+                    </div>
+                </div>
+                <img class="socios-img" src="https://cdn.freebiesupply.com/logos/thumbs/2x/sams-club-2-logo.png" />
+            </div>
+        </section>
+        <br><br> -->
+        <!--Todo: Seccion Nosotros -->
+        <section id="nosotros">
+            <div class="nosotros">
+                <img src="src/img/Shawarma-amico.png" />
+                <div class="nosotros-texto">
+                    <h3>Nosotros</h3>
+                    <p>Somos una empresa dedicada a la elaboración de snacks de frutos rojos deshidratados de forma
+                        natural, para cuidar la alimentación de nuestros clientes, asi mismo, garantizar el cuidado del
+                        medio ambiente con el mismo, ya que se puede realizar, además que satisfacemos el antojo de un
+                        snack principalmente de las personas que desean cuidar su salud sustituyendo los snaks chatarra.
+                    </p>
+                    <p>Se puede considerar una pequeña empresa debido a nuestra capacidad de producción, a nuestro
+                        limitado alcance y que debido a lo que producimos, nos limitamos en llegar a más clientes o
+                        explorar nuevos posibles mercados.</p>
+                    <br>
+                    <div class="mision-vision">
+                        <div>
+                            <h2>Misión</h2>
+                            <p>Nuestra misión es ser una empresa líder en productos de consumo de manera nacional e
+                                internacional, centrada en la producción de alimentos convenientes y ofrecer a los
+                                consumidores los mejores snacks con sensaciones innovadoras, de calidad 100% naturales.
+                            </p>
+                        </div>
+                        <div>
+                            <h2>Visión</h2>
+                            <p>La visión de <a style="color: red;">Snacktural</a> se encamina a la inclusión y el
+                                cuidado de sus clientes como sus trabajadores y accionistas, impulsada por su medio, su
+                                espíritu de competencia en el mercado, asi mismo garantizar el cuidado del medio
+                                ambiente, buscando formar parte del mercado competitivo y destacar como la mejor
+                                compañía.</p>
+                        </div>
+                    </div>
+                    <footer class="footer-nosotros">
+                        <div class="filed">
+                            <a style="color: #3b5998; cursor: pointer;" class="ti ti-brand-facebook-filled"></a>
+                            <a style="color: #171515; cursor: pointer;" class="ti ti-brand-github-filled"></a>
+                            <a style="color: #00acee; cursor: pointer;" class="ti ti-brand-twitter-filled"></a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+        <!--Todo: Seccion Ubicación  -->
+        <section id="Sucursal" class="location">
+            <div>
+                <h1 class="location-title">Visita Nuestra Sucursal!</h1>
+            </div>
+            <div class="img-wrapper">
+                <img class="location-img" src="src/img/Sucursal.JPG" alt="Ubicacion" />
+                <img class="location-img" src="src/img/Sucursal2.JPG" alt="Ubicacion" />
+            </div>
+            <div class="location-info">
+                <p>Contamos con servicio a domicilio y para comer en la taquería en un horario de 7:30pm a 10:30pm</p>
+                <p>¡Visítanos en Calle Abasolo Norte No. 207, Tenancingo, Mex! (<a
+                        href="https://www.google.com.mx/maps/place/Abasolo+Nte.+207,+Centro,+52400+Centro,+M%C3%A9x./@18.962975,-99.5981247,17z/data=!3m1!4b1!4m6!3m5!1s0x85cd95a204a2c9e7:0x162dff571cd275c6!8m2!3d18.962975!4d-99.5955498!16s%2Fg%2F11csjc4dss?entry=ttu">Ver
+                        Ubicación</a>)</p>
+            </div>
+        </section>
+        <!--Todo: Seccion Alcance -->
+        <section class="scope">
+            <div class="scope-header">
+                <strong class="str">ALCANCE DE NUESTRO SERVICIO A DOMICILIO</strong>
+                <h1 class="scope-title">SUCURSAL ABASOLO NORTE TENANCINGO</h1>
+                <hr class="line-title">
+            </div>
+            <div class="scope-body">
+                <hr class="line-scope">
+                <div class="scope-child">
+                    <p>En Taquería Los Chinos estamos trabajando para ampliar el alcance de nuestro servicio a
+                        domicilio,
+                        sin embargo, por el momento entregamos sin costo de envio alguno en:</p>
+                    <ul>
+                        <li>Zona Centro Tenancingo</li>
+                    </ul>
+                    <p>Las siguientes zonas cuentan con costo de envio:</p>
+                    <div class="scope-list">
+                        <ul>
+                            <li>El Salitre</li>
+                            <li>San Mateo</li>
+                            <li>La Cienega</li>
+                            <li>San José El Cuartel</li>
+                        </ul>
+                    </div>
+                    <p>*Para conocer la lista de las colonias de nuestra sucursal en Tenancingo y conocer los costos de
+                        envio favor de llamar
+                        al: 5370.4397*</p>
+                </div>
+                <hr class="line-scope">
+            </div>
+        </section>
+        <!--Todo: Seccion Preguntas -->
+        <!-- <h1 class="faq-heading">FAQs</h1>
+        <section id="FAQs" class="faq-container">
+            <div class="faq-one">
+                <h1 class="faq-page">¿Nuestros productos son de calidad?</h1>
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <h1 class="faq-page">¿Tenemos envios?</h1>
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <h1 class="faq-page">¿Contamos con sucursales?</h1>
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+        </section>
+        <br><br> -->
+        <!--Todo: Seccion Footer -->
+        <!--? Footer Top -->
+        <footer id="social" class="top">
+            <h1 class="titulo-footer">Los Chinos</h1>
+            <div class="links">
+                <div>
+                    <h2>Plataforma</h2>
+                    <a href="#">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                </div>
+                <div>
+                    <h2>Cloud</h2>
+                    <a href="contact/form_conyact.html">Contacto</a>
+                    <!-- <a href="./work-team/team.html">Equipo</a> -->
+                </div>
+            </div>
+        </footer>
+        <!--? Footer Down -->
+        <footer class="bottom">
+            <div class="legal">
+                <span>Oscar Aranda &copy; 2023 - Derechos Reservados</span>
+            </div>
+            <div class="links">
+                <a style="font-size: 20px; color: #3b5998; cursor: pointer;" class="ti ti-brand-facebook-filled"></a>
+                <a style="font-size: 20px; color: #171515; cursor: pointer;" class="ti ti-brand-github-filled"></a>
+                <a style="font-size: 20px; color: #00acee; cursor: pointer;" class="ti ti-brand-twitter-filled"></a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="Js/carrito.js"></script>
+    <script src="Js/car-shopping.js"></script>
+    <script src="Js/FAQs.js"></script>
+
+</body>
+
+</html>

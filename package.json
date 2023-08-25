@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "imagehover.css": "^2.0.0",
+    "sweetalert2": "^11.7.12"
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.1.1"
+  }
+}
