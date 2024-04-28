@@ -2,6 +2,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
     "imagehover.css": "^2.0.0",
+    "markdown": "^0.5.0",
     "sweetalert2": "^11.7.12"
   },
   "devDependencies": {
