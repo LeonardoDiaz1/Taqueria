@@ -52,8 +52,6 @@ Si tienes alguna pregunta o necesitas ayuda, no dudes en ponerte en contacto con
 
 ---
 
-> [!NOTE] Nota 
+> [!TIP] 
 > 
-> Esta es solo una estructura básica para una guía de usuario. Puedes personalizarla según las características específicas de tu aplicación y las necesidades de tus usuarios. ¿Hay algo más en lo que pueda ayudarte?rio de registro con tu información personal.
-
----
+> Esta es solo una estructura básica para una guía de usuario.
