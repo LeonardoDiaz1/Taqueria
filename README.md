@@ -52,6 +52,6 @@ Si tienes alguna pregunta o necesitas ayuda, no dudes en ponerte en contacto con
 
 ---
 
-> [!TIP] 
+> [!NOTE] 
 > 
 > Esta es solo una estructura básica para una guía de usuario.
