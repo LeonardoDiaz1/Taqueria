@@ -1086,6 +1086,13 @@ main section div ul li {
     text-decoration: underline;
 }
 
+.frame{
+    width: 800px;
+    height: 400px;
+    border: none;
+    border-radius: 15px;
+}
+
 /*Todo: Seccion Alcance  */
 .scope {
     margin-top: 70px;
