@@ -50,8 +50,6 @@ En cualquier momento, puedes acceder a tu cuenta para realizar las siguientes ac
 
 Si tienes alguna pregunta o necesitas ayuda, no dudes en ponerte en contacto con nuestro equipo de soporte. Estamos aquí para ayudarte en cualquier momento.
 
----
-
 > [!NOTE] 
 > 
 > Esta es solo una estructura básica para una guía de usuario.

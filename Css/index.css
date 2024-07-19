@@ -337,8 +337,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .product-title {
     font-family: var(--texto-font), sans-serif;
-    margin-left: 35px;
-    font-size: 1.5rem;
+    margin-left: 115px;
+    font-size: 1.8rem;
     color: #e7a61a;
 }
 
@@ -1087,7 +1087,7 @@ main section div ul li {
 }
 
 .frame{
-    width: 800px;
+    width: 900px;
     height: 400px;
     border: none;
     border-radius: 15px;
